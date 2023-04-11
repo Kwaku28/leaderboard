@@ -1,0 +1,76 @@
+:root {
+  --mycolor: rgb(10, 9, 9);
+}
+
+body {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.main {
+  display: flex;
+  gap: 50px;
+}
+
+h1 {
+  color: var(--mycolor);
+  font-size: 50px;
+}
+
+.recent-scores {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  width: 30%;
+}
+
+.container {
+  display: flex;
+}
+
+form button {
+  width: fit-content;
+}
+
+.container button {
+  height: fit-content;
+  margin: auto;
+}
+
+h2 {
+  color: var(--mycolor);
+}
+
+.scores {
+  border: 2px solid #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.scores li {
+  list-style: none;
+  margin-left: -30px;
+  color: var(--mycolor);
+}
+
+.add-your-score {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
