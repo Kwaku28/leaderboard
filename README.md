@@ -71,7 +71,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Not Available](https://...)
+- [Leaderboard](https://kwaku28.github.io/leaderboard/dist/)
 
 <!-- GETTING STARTED -->
 
