@@ -9,6 +9,7 @@ const yourScore = `
         type="number"
         name="number"
         id="number"
+        step=".01"
         placeholder="Your score"
     />
     <button type="submit" class="btn">Submit</button>
