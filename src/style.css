@@ -1,18 +1,22 @@
 :root {
-  --mycolor: rgb(10, 9, 9);
+  --mycolor: rgb(255, 200, 49);
+  --shadow: #4e4a4a;
 }
 
 body {
   box-sizing: border-box;
-  margin: auto;
 }
 
 main {
   display: flex;
   flex-direction: column;
   width: 60%;
+  height: 95vh;
   margin: auto;
-  padding-top: 50px;
+  padding-left: 20px;
+  background-image: url(../src/Images/10-klay-thompson.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main {
@@ -23,13 +27,14 @@ main {
 h1 {
   color: var(--mycolor);
   font-size: 50px;
+  text-shadow: 3px 3px var(--shadow);
 }
 
 .recent-scores {
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
-  width: 30%;
+  padding-left: 30px;
+  width: 45%;
 }
 
 .container {
@@ -38,30 +43,65 @@ h1 {
 
 form button {
   width: fit-content;
+  background: var(--mycolor);
+  border: none;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 3px 2px var(--shadow);
 }
 
 .container button {
   height: fit-content;
   margin: auto;
+  background: var(--mycolor);
+  border: none;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 3px 2px var(--shadow);
+}
+
+form button:hover {
+  transform: scale(1.2);
+}
+
+.container button:hover {
+  transform: scale(1.2);
 }
 
 h2 {
+  font-size: 30px;
   color: var(--mycolor);
+  text-shadow: 3px 2px var(--shadow);
 }
 
 .scores {
-  border: 2px solid #111;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-height: 50%;
+  max-height: 70%;
   overflow-y: scroll;
+  overflow-x: hidden;
+  gap: 5px;
 }
 
 .scores li {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-  margin-left: -30px;
-  color: var(--mycolor);
+  margin-left: -20px;
+  padding: 5px 10px;
+  background-color: var(--mycolor);
+  cursor: pointer;
+  box-shadow: 0 3px 14px rgba(24, 23, 12, 0.99);
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 14px;
+}
+
+.scores li:hover {
+  transform: scale(1.1);
 }
 
 .add-your-score {
@@ -75,4 +115,15 @@ form {
   flex-direction: column;
   gap: 20px;
   align-items: flex-end;
+}
+
+#name,
+#number {
+  border: none;
+  border-radius: 8px;
+  padding-left: 8px;
+  height: 25px;
+  background: var(--mycolor);
+  box-shadow: 3px 2px var(--shadow);
+  outline: none;
 }
